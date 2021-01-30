@@ -1,0 +1,44 @@
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media screen and (max-width: 1199px) {
+    margin-top: -30px;
+  }
+
+  &__item {
+    display: flex;
+    height: 90px;
+    width: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 60px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 150px) / 6);
+    }
+
+    @media screen and (max-width: 1199px) {
+      margin-top: 30px;
+    }
+  }
+  &__link {
+    @extend %flex-center;
+    width: 100%;
+    height: 100%;
+
+    color: $icon-color-second;
+    border: 1px solid $icon-color-second;
+    border-radius: 4px;
+    fill: currentColor;
+
+    @include transition(color, border);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      border: 1px solid $accent-color;
+    }
+  }
+}

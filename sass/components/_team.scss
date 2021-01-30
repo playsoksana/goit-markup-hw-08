@@ -1,0 +1,60 @@
+.team {
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 1.19;
+
+  background-color: $second-background;
+}
+
+.team-items {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: -30px;
+  }
+}
+
+.team-card {
+  display: block;
+  border: 0;
+  padding-bottom: 24px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: $backgroung-main;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 24px;
+  }
+
+  &__photo {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &__name {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: $primary-title;
+  }
+
+  &__function {
+    margin: 0 0 16px;
+  }
+}

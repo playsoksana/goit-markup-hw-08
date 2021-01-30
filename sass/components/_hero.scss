@@ -1,0 +1,66 @@
+.hero-overlay {
+  text-align: center;
+  width: 480px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 118px 0;
+
+  background-color: $color-hero;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/overlay.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 400px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1600px;
+    height: 600px;
+    padding: 200px;
+  }
+}
+
+.hero-wrapper {
+  width: 360px;
+  margin: 0 auto 30px auto;
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+  }
+  &__title {
+    color: $second-title;
+    font-size: 26px;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.37;
+    }
+  }
+}
+
+.hero-btn {
+  display: inline-block;
+  flex-basis: 200px;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 32px;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $second-title;
+  background-color: $accent-color;
+}
