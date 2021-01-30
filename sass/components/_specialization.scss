@@ -1,0 +1,37 @@
+.specialization-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.specialization-type {
+  width: calc((100% - 60px) / 3);
+  &__link {
+    position: relative;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+  }
+  &__photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  &__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @extend %flex-center;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $second-title;
+    background: rgba(47, 48, 58, 0.8);
+  }
+}

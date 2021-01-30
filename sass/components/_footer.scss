@@ -1,0 +1,30 @@
+.footer {
+  background-color: $dark-background;
+  padding: 60px 0;
+  &__conteiner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.address {
+  display: block;
+  width: 231px;
+  &__text {
+    display: flex;
+    margin-top: 0;
+    font-style: normal;
+    color: $second-title;
+    margin-bottom: 9px;
+  }
+}
+
+.contacts-list {
+  &__item:not(:last-child) {
+    display: block;
+    margin-bottom: 9px;
+  }
+  &__link {
+    display: block;
+  }
+}
