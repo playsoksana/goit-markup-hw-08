@@ -13,6 +13,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
+
     background-color: $icon-color;
     @include transition(background-color);
 
@@ -20,9 +21,9 @@
     &:focus {
       background-color: $accent-color;
     }
-    &__icon {
-      fill: currentColor;
-    }
+  }
+  &__icon {
+    fill: currentColor;
   }
 }
 

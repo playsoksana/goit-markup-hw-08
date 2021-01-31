@@ -1,0 +1,107 @@
+.portfolio-list {
+  font-size: 16px;
+  line-height: 1.9;
+  position: relative;
+  margin: -30px 0 0 -30px;
+  background-color: $backgroung-main;
+  border: 0;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.portfolio-item {
+  width: 100%;
+
+  margin: 30px 0 0 30px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 3);
+  }
+
+  &__wrap {
+    position: relative;
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.7;
+    color: $second-title;
+    overflow: hidden;
+  }
+
+  &__photo {
+    display: block;
+    width: 100%;
+    height: 294px;
+  }
+
+  &__info {
+    line-height: 1.55;
+    margin: 0;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+
+    color: $primary-title;
+    margin: 20px 24px 4px;
+  }
+
+  &__text {
+    margin: 0 24px 0;
+  }
+}
+
+.portfolio-item__link {
+  display: inline-block;
+  padding: 0 0 20px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid $portfolio-border;
+
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+  @include transition(box-shadow, border);
+
+  &:focus,
+  &:hover {
+    border: 1px solid $portfolio-border;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.portfolio-item__overlay {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  padding: 77px 24px;
+
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+
+  @include transition(transform);
+
+  transform: translate(-50%, 100%);
+  background-color: rgba(33, 150, 243, 0.9);
+
+  .portfolio-item__link:hover &,
+  .portfolio-item__link:focus & {
+    transform: translate(-50%, -50%);
+  }
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 63px 24px;
+  }
+}

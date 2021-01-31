@@ -1,8 +1,8 @@
 .mailing-form__input {
-  display: inline-block;
+  display: inline-flex;
   margin: 0 auto 20px;
 
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   border-radius: 4px;
@@ -19,10 +19,15 @@
   &:not(:placeholder-shown) {
     color: var(--placeholder-text);
   }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% - 215px);
+    margin-right: 8px;
+  }
 }
 
 .mailing-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin: 0 auto;
   box-sizing: border-box;

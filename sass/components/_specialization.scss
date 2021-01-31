@@ -3,6 +3,10 @@
   @media screen and (max-width: 1199px) {
     display: none;
   }
+  &-items {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .specialization-type {
   width: calc((100% - 60px) / 3);

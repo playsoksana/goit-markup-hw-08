@@ -2,19 +2,23 @@
   background-color: $dark-background;
   padding: 60px 0;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer-container {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
     justify-content: space-between;
   }
 }
 
 .address {
-  margin-bottom: 60px;
-
   &__text {
     margin-top: 0;
     font-style: normal;
@@ -32,12 +36,6 @@
 .container-contacts,
 .networks-container,
 .mailing-form {
-  @media screen and (min-width: 768px) {
-    width: 100% / 2;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 100% / 3;
-  }
   &__title {
     display: block;
     margin: 0 0 20px;
@@ -48,17 +46,40 @@
   }
 }
 
+.container-contacts,
 .networks-container {
+  padding-bottom: 0;
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    width: 100% / 2;
+
+    margin-bottom: 55px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 20%;
+    margin-bottom: 0;
+  }
+}
+.mailing-form {
+  padding-bottom: 0;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    margin: 0 auto 55px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    width: 47%;
+    margin: 12px 0;
+  }
 }
 
-.mailing-form {
-  &__input {
-    display: inline-block;
-    width: 100%;
-
-    @media screen and (min-width: 1200px) {
-      width: calc(100% - 250px);
-    }
+.networks-container {
+  color: $second-title;
+  padding-bottom: 0;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 5px auto 55px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 12px 0;
   }
 }
