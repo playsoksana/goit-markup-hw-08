@@ -5,20 +5,14 @@
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 .address {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  width: 100%;
   margin-bottom: 60px;
 
   &__text {
@@ -39,16 +33,19 @@
 .networks-container,
 .mailing-form {
   @media screen and (min-width: 768px) {
-    width: calc((100% - 5px) / 2);
+    width: 100% / 2;
   }
-}
-
-.networks-container,
-.mailing-form {
-  font-weight: 700;
-  line-height: 1.2;
-  color: $second-title;
-  text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    width: 100% / 3;
+  }
+  &__title {
+    display: block;
+    margin: 0 0 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: $second-title;
+    text-transform: uppercase;
+  }
 }
 
 .networks-container {
@@ -56,12 +53,12 @@
 }
 
 .mailing-form {
-  display: flex;
-  flex-direction: column;
-}
+  &__input {
+    display: inline-block;
+    width: 100%;
 
-.networks-container__title,
-.mailing-form__title {
-  display: block;
-  margin: 0 0 20px;
+    @media screen and (min-width: 1200px) {
+      width: calc(100% - 250px);
+    }
+  }
 }
