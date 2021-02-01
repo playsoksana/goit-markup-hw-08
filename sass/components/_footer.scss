@@ -48,6 +48,7 @@
 
 .container-contacts,
 .networks-container {
+  
   padding-bottom: 0;
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
@@ -67,7 +68,7 @@
     margin: 0 auto 55px;
   }
   @media screen and (min-width: 1200px) {
-    display: inline-block;
+    display: flex;
     width: 47%;
     margin: 12px 0;
   }
