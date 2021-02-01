@@ -1229,32 +1229,55 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding: 94px 15px;
+  }
+}
+
 .backdrop--hidden {
   opacity: 0;
   pointer-events: none;
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 1;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  -webkit-transition-property: scale, opacity;
-  transition-property: scale, opacity;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  width: 450px;
-  background-color: #ffffff;
+  position: relative;
   padding: 40px;
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transition-property: scale, opacity;
+    transition-property: scale, opacity;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transition-property: scale, opacity;
+    transition-property: scale, opacity;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
