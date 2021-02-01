@@ -48,14 +48,6 @@ body {
     border-bottom: 1px solid $header-bottom;
   }
 
-  .visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: 0;
-  }
-
   .sub-title {
     margin-top: 0;
     margin-bottom: 30px;

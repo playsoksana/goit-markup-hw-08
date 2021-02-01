@@ -1,12 +1,12 @@
 .advantages {
   padding-top: 60px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $laptop) {
     padding-top: 94px;
   }
 }
 
 .advantages-list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -17,10 +17,10 @@
 
   &__item {
     margin-bottom: 30px;
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       width: calc((100% - 30px) / 2);
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $laptop) {
       width: calc((100% - 90px) / 4);
       margin-bottom: 0;
     }
@@ -52,7 +52,7 @@
       text-transform: uppercase;
       color: $primary-title;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: $tablet) {
         text-align: left;
       }
     }

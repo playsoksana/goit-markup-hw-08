@@ -351,6 +351,22 @@ li {
   padding: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: 0;
+}
+
 .btn-menu, .advantages-list .advantages-list__wrap, .specialization-type__title, .social-networks__link, .clients-list__link, .btn-close {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -424,14 +440,6 @@ body {
 
 .container .container__header {
   border-bottom: 1px solid #ececec;
-}
-
-.container .visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: 0;
 }
 
 .container .sub-title {
@@ -1067,65 +1075,60 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
 }
 
-.address__text {
-  margin-top: 0;
-  font-style: normal;
-  color: #ffffff;
-  margin-bottom: 8px;
-}
-
-.contacts-list__item:not(:last-child) {
-  margin-bottom: 8px;
-}
-
-.container-contacts__title,
-.networks-container__title,
-.mailing-form__title {
-  display: block;
-  margin: 0 0 20px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.container-contacts,
-.networks-container {
-  padding-bottom: 0;
+.retreat-footer {
   margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
-  .container-contacts,
-  .networks-container {
-    width: 100% / 2;
-    margin-bottom: 55px;
+  .retreat-footer {
+    width: calc(100% / 2);
+    margin-bottom: 50px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .container-contacts,
-  .networks-container {
-    width: 20%;
+  .retreat-footer {
+    display: inline;
     margin-bottom: 0;
   }
 }
 
-.mailing-form {
-  padding-bottom: 0;
+.address__text {
+  display: block;
+  font-style: normal;
+  margin: 0 0 8px;
+  color: #ffffff;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .mailing-form {
-    display: block;
-    margin: 0 auto 55px;
-  }
+.contacts-list__mail {
+  display: block;
+  margin: 0 0 8px;
+}
+
+.footer-title {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.mailing-form {
+  display: block;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1133,25 +1136,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 47%;
-    margin: 12px 0;
-  }
-}
-
-.networks-container {
-  color: #ffffff;
-  padding-bottom: 0;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .networks-container {
-    margin: 5px auto 55px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .networks-container {
-    margin: 12px 0;
   }
 }
 
@@ -1160,17 +1144,20 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 450px;
-  margin: 0 auto 20px;
-  height: 50px;
-  padding: 15px 16px;
-  border-radius: 4px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 16px;
+  -webkit-transition-property: border-color, outline-color;
+  transition-property: border-color, outline-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
   font-family: Roboto, sans-serif;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.2;
-  letter-spacing: 0.03em;
   background-color: #2f303a;
 }
 
@@ -1180,21 +1167,18 @@ body {
 
 @media screen and (min-width: 1200px) {
   .mailing-form__input {
-    width: calc(100% - 215px);
-    margin-right: 8px;
+    width: 358px;
   }
 }
 
 .mailing-btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 10px 28px;
   border: 0;
   border-radius: 4px;

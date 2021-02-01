@@ -69,7 +69,7 @@
 
   margin-left: 24px;
   margin-bottom: 31px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $laptop) {
     margin-left: 31px;
   }
 

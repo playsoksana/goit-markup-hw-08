@@ -2,85 +2,59 @@
   background-color: $dark-background;
   padding: 60px 0;
   text-align: center;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $laptop) {
     text-align: left;
   }
 }
 
 .footer-container {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $laptop) {
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
+  }
+}
+
+.retreat-footer {
+  margin-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    width: calc(100% / 2);
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: $laptop) {
+    display: inline;
+    margin-bottom: 0;
   }
 }
 
 .address {
   &__text {
-    margin-top: 0;
+    display: block;
     font-style: normal;
+    margin: 0 0 8px;
     color: $second-title;
-    margin-bottom: 8px;
   }
 }
 
 .contacts-list {
-  &__item:not(:last-child) {
-    margin-bottom: 8px;
-  }
-}
-
-.container-contacts,
-.networks-container,
-.mailing-form {
-  &__title {
+  &__mail {
     display: block;
-    margin: 0 0 20px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: $second-title;
-    text-transform: uppercase;
+    margin: 0 0 8px;
   }
 }
 
-.container-contacts,
-.networks-container {
-  
-  padding-bottom: 0;
-  margin-bottom: 60px;
-  @media screen and (min-width: 768px) {
-    width: 100% / 2;
-
-    margin-bottom: 55px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 20%;
-    margin-bottom: 0;
-  }
-}
-.mailing-form {
-  padding-bottom: 0;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: block;
-    margin: 0 auto 55px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    width: 47%;
-    margin: 12px 0;
-  }
-}
-
-.networks-container {
+.footer-title {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
   color: $second-title;
-  padding-bottom: 0;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin: 5px auto 55px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin: 12px 0;
-  }
 }

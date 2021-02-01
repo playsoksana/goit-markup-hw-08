@@ -8,12 +8,12 @@
 }
 
 .team-items {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     margin-top: -30px;
   }
 }
@@ -27,19 +27,19 @@
   border-radius: 0px 0px 4px 4px;
   background-color: $backgroung-main;
   text-align: center;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: calc((100% - 30px) / 2);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $laptop) {
     width: calc((100% - 90px) / 4);
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     margin-top: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $laptop) {
     padding-bottom: 24px;
   }
 

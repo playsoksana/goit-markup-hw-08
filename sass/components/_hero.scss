@@ -1,5 +1,4 @@
 .hero-overlay {
-
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -17,11 +16,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     max-width: 768px;
     max-height: 400px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $laptop) {
     max-width: 1600px;
     max-height: 600px;
     padding: 200px;
@@ -31,7 +30,7 @@
 .hero-wrapper {
   width: 360px;
   margin: 0 auto 30px auto;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $laptop) {
     width: 696px;
   }
   &__title {
@@ -41,7 +40,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $laptop) {
       font-size: 44px;
       line-height: 1.37;
     }

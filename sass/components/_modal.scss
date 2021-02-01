@@ -24,7 +24,7 @@
   background-color: $backgroung-main;
 
   opacity: 1;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 450px;
     position: absolute;
     top: 50%;
@@ -33,7 +33,7 @@
     @include transition(scale, opacity);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $laptop) {
     width: 528px;
     position: absolute;
     top: 50%;

@@ -28,7 +28,7 @@
     color: $primary-title;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $laptop) {
     font-size: 26px;
   }
 }

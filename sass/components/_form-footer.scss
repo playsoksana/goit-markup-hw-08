@@ -1,37 +1,36 @@
-.mailing-form__input {
-  display: flex;
-  width: 450px;
-  margin: 0 auto 20px;
-
-  
-  height: 50px;
-  padding: 15px 16px;
-  border-radius: 4px;
-  border: 1px solid $form-color;
-
-  font-family: $primary-font-family;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  background-color: $dark-background;
-  &:placeholder-shown,
-  &:not(:placeholder-shown) {
-    color: var(--placeholder-text);
+.mailing-form {
+  display: block;
+  @media screen and (min-width: $laptop) {
+    display: flex;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: calc(100% - 215px);
-    margin-right: 8px;
+  &__input {
+    display: flex;
+    width: 450px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px 16px;
+    @include transition(border-color, outline-color);
+    cursor: pointer;
+    font-family: $primary-font-family;
+    font-size: 16px;
+    line-height: 1.2;
+    background-color: $dark-background;
+    &:placeholder-shown,
+    &:not(:placeholder-shown) {
+      color: var(--placeholder-text);
+    }
+    @media screen and (min-width: $laptop) {
+      width: 358px;
+    }
   }
 }
 
 .mailing-btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   margin: 0 auto;
-  box-sizing: border-box;
   padding: 10px 28px;
   border: 0;
   border-radius: 4px;
