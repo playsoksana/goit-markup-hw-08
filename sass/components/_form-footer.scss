@@ -2,6 +2,7 @@
   display: block;
   @media screen and (min-width: $laptop) {
     display: flex;
+    align-items: center;
   }
 
   &__input {
@@ -23,6 +24,8 @@
     }
     @media screen and (min-width: $laptop) {
       width: 358px;
+      margin-bottom: 0;
+      margin-right: 12px;
     }
   }
 }
