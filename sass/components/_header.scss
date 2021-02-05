@@ -2,79 +2,21 @@
   position: fixed;
   width: 100%;
   top: 0;
-  left: 0;
-  z-index: 1;
-  background-color: $backgroung-main;
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-  }
-  &__container {
-    position: relative;
-    display: flex;
-    align-items: s center;
-    justify-content: space-between;
-    padding: 16px 15px;
-    @media screen and (min-width: $tablet) {
-      padding: 0 15px;
-    }
-  }
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+  background-color: $background-main;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
 }
 
 .nav-container {
-  background-color: $backgroung-main;
-  color: $primary-title;
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    margin-left: 84px;
-  }
-  @media screen and (min-width: $tablet) {
-    margin-left: 93px;
-  }
-}
-
-.site-nav {
-  display: flex;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-
-  &__item:not(:last-child) {
-    margin-right: 50px;
-  }
-  &__link {
-    display: block;
-    padding: 32px 0;
-  }
-}
-
-.header-contacts {
-  color: $text-color;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  @media screen and (min-width: $tablet) {
-    display: block;
-    margin-left: auto;
-  }
-
-  @media screen and (min-width: $laptop) {
-    display: flex;
-  }
-  &__link {
-    display: flex;
-    align-items: center;
-  }
-  &__link:first-child {
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
-      margin-bottom: 10px;
-    }
-    @media screen and (min-width: $laptop) {
-      margin-right: 30px;
-    }
-  }
-  &__icon {
-    margin-right: 10px;
+  @media screen and (max-width: $laptop - 1px) {
+    display: none;
   }
 }

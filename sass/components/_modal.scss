@@ -21,7 +21,7 @@
 .modal {
   position: relative;
   padding: 40px;
-  background-color: $backgroung-main;
+  background-color: $background-main;
 
   opacity: 1;
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
@@ -58,7 +58,7 @@
   height: 30px;
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: $backgroung-main;
+  background-color: $background-main;
   border-radius: 50%;
   margin-left: auto;
   fill: currentColor;

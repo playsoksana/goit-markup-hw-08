@@ -1,0 +1,107 @@
+.btn-menu {
+  @extend %flex-center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: $background-main;
+  color: $primary-title;
+  border: 0;
+  outline-color: transparent;
+  @include transition(color);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &__icon {
+    fill: currentColor;
+  }
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.header-menu {
+  display: none;
+  @media screen and (max-width: $tablet) {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: auto;
+    background-color: $background-main;
+    padding: 48px 40px;
+
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+  }
+}
+
+.list-menu {
+  margin-bottom: 300px;
+  font-size: 40px;
+  color: $primary-title;
+  &__item {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    @include transition(color);
+    &:focus,
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+.menu-close {
+  @extend %flex-center;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  color: $primary-title;
+  background-color: transparent;
+  outline-color: transparent;
+  border: 0;
+  @include transition(color);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.contacts-menu {
+  font-size: 34px;
+  .tel__contacts-menu {
+    display: block;
+    margin-bottom: 32px;
+    font-size: 34px;
+    color: $accent-color;
+  }
+  .mail__contacts-menu {
+    display: block;
+    margin-bottom: 64px;
+    font-size: 24px;
+    color: $text-color;
+  }
+}
+
+.social-menu {
+  display: flex;
+
+  font-size: 18px;
+  line-height: 1.22;
+  color: $accent-color;
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
