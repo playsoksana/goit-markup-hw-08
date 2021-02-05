@@ -925,6 +925,7 @@ img {
 }
 
 .team-card__photo {
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -1666,6 +1667,12 @@ img {
   line-height: 1.7;
   color: #ffffff;
   overflow: hidden;
+}
+
+.portfolio-item__photo {
+  display: block;
+  width: 100%;
+  height: 294px;
 }
 
 .portfolio-item__info {
