@@ -35,7 +35,7 @@
   color: $icon-color-second;
 }
 
-.social-networks__link--effects {
+.social-networks__link {
   @include transition(color, background-color);
 
   &:hover,

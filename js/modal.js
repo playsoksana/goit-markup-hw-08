@@ -12,30 +12,24 @@
     refs.modal.classList.toggle('backdrop--hidden');
   }
 })();
-// (() => {
-//   const refs = {
-//     openModalBtn: document.querySelector('[data-open-menu]'),
-//     closeModalBtn: document.querySelector('[data-close-menu]'),
-//     modal: document.querySelector('[data-menu]'),
-//   };
 
-//   refs.openModalBtn.addEventListener('click', toggleModal);
-//   refs.closeModalBtn.addEventListener('click', toggleModal);
 
-//   function toggleModal() {
-//     refs.modal.classList.toggle('backdrop--hidden');
-//   }
-// })();
-// (() => {
-//   const menuBtnRef = document.querySelector ("[data-menu-button]");
-//   const mobileMenuRef = document.querySelector ("[data-menu]");
-//   menuBtnRef.addEventListener("click", () =>  {
-// const expended = 
-// menuBtnRef.getAttribute("aria-expended") === "true" || false;
-// menuBtnRef.classList.toggle("is-open");
-// menuBtnRef.setAttribute("aria-expended", !expended);
-// mobileMenuRef.classList.toggle("is-open");
-//   });
-// }
-// )();
+    (() => {
+   const setup = (name) => {
+        const backdrop = document.querySelector(`[data-backdrop-${name}]`);
+        const buttons = document.querySelectorAll(
+          `[data-toggle-backdrop-${name}]`
+        );
+        const toggleBackdrop = () => backdrop.classList.toggle("menu--hidden");
+        buttons.forEach((button) =>
+          button.addEventListener("click", toggleBackdrop)
+        );
+      };
+      setup("schedule");
+      setup("menu");
+  }
+)();
+
+
+
 

@@ -27,7 +27,9 @@
     display: block;
     top: 0;
     left: 0;
-    z-index: 5;
+    z-index: 6;
+    opacity: 1;
+    pointer-events: auto;
     width: 100%;
     height: auto;
     background-color: $background-main;
