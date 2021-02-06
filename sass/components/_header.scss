@@ -12,11 +12,108 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  @media screen and (max-width: $tablet - 1px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .nav-container {
-  @media screen and (max-width: $laptop - 1px) {
+  @media screen and (max-width: $tablet - 1px) {
     display: none;
   }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 88px;
+  }
+}
+
+.navigation {
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__item {
+    position: relative;
+  }
+  &__link {
+    display: block;
+    padding: 32px 0;
+    color: $primary-title;
+    @include transition(color, opacity);
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      opacity: 1;
+    }
+  }
+  &__link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 4px;
+    opacity: 0;
+  }
+}
+
+.header-contacts {
+  font-size: 12px;
+  @media screen and (min-width: $laptop) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: $laptop) {
+    display: flex;
+  }
+
+  &__link {
+    display: flex;
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  &__icon {
+    margin-right: 8px;
+    fill: currentColor;
+  }
+}
+
+.mail__header-contacts {
+  @media screen and (min-width: $tablet) and (max-width: $laptop - 1px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: $laptop) {
+    margin-right: 30px;
+  }
+}
+
+.site-nav__link--current {
+  color: $accent-color;
+  &.site-nav__link::after {
+    opacity: 1;
+  }
+}
+
+.container__header {
+  border-bottom: 1px solid $header-bottom;
 }
