@@ -2,9 +2,6 @@
   display: flex;
   justify-content: center;
   margin-left: -10px;
-  @media screen and (min-width: $laptop) {
-    justify-content: flex-start;
-  }
 
   &__item {
     display: flex;

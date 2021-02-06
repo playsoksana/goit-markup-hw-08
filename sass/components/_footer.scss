@@ -60,5 +60,6 @@
 .position__social {
   @media screen and (min-width: $laptop) {
     margin-bottom: 0;
+    justify-content: flex-start;
   }
 }
