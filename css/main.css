@@ -643,11 +643,6 @@ img {
   color: #2196f3;
 }
 
-.header-contacts__icon {
-  margin-right: 8px;
-  fill: currentColor;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .mail__header-contacts {
     margin-bottom: 10px;
@@ -657,6 +652,33 @@ img {
 @media screen and (min-width: 1200px) {
   .mail__header-contacts {
     margin-right: 30px;
+  }
+}
+
+.icon-tel__header {
+  margin-right: 8px;
+  fill: currentColor;
+  width: 10px;
+  height: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-tel__header {
+    height: 16px;
+  }
+}
+
+.icon-mail__header {
+  margin-right: 8px;
+  fill: currentColor;
+  width: 14px;
+  height: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-mail__header {
+    width: 16px;
+    height: 12px;
   }
 }
 
