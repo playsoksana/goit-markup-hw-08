@@ -1,15 +1,14 @@
-    (() => {
-   const setup = (name) => {
-        const backdrop = document.querySelector(`[data-backdrop-${name}]`);
-        const buttons = document.querySelectorAll(
-          `[data-toggle-backdrop-${name}]`
-        );
-        const toggleBackdrop = () => backdrop.classList.toggle("menu--hidden");
-        buttons.forEach((button) =>
-          button.addEventListener("click", toggleBackdrop)
-        );
-      };
-      setup("schedule");
-      setup("menu");
-  }
-)();
+(() => {
+  const menuBtnRef = document.querySelector("[data-menu-button]");
+  const mobileMenuRef = document.querySelector("[data-menu]");
+
+  menuBtnRef.addEventListener("click", () => {
+    const expanded =
+      menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+    menuBtnRef.classList.toggle("is-open");
+    menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+    mobileMenuRef.classList.toggle("is-open");
+  });
+})();

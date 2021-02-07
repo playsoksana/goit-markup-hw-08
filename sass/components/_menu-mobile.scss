@@ -1,4 +1,8 @@
 .btn-menu {
+  z-index: 99;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   @extend %flex-center;
   padding: 0;
   width: 40px;
@@ -20,21 +24,35 @@
   }
 }
 
+.btn-menu.is-open .btn-menu__burger {
+  display: none;
+}
+
+.btn-menu__cross {
+  display: none;
+  .btn-menu.is-open & {
+    display: block;
+  }
+}
+
 .header-menu {
   display: none;
+  &.is-open {
+    display: flex;
+  }
+
   @media screen and (max-width: $tablet) {
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     top: 0;
-    bottom: 0;
     left: 0;
-    z-index: 16;
+    z-index: 10;
     opacity: 1;
     pointer-events: auto;
-    width: 100%;
-    max-height: 100vh;
+    width: 100vw;
+    height: 100vh;
 
     background-color: $background-main;
     padding: 48px 40px;
