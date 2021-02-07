@@ -22,6 +22,12 @@
     width: calc((100% - 90px) / 3);
   }
 
+  &__photo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
   &__wrap {
     position: relative;
     width: 100%;

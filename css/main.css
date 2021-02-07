@@ -1935,6 +1935,12 @@ img {
   }
 }
 
+.portfolio-item__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .portfolio-item__wrap {
   position: relative;
   width: 100%;
