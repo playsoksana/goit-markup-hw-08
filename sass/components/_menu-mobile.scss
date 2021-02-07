@@ -24,14 +24,18 @@
   display: none;
   @media screen and (max-width: $tablet) {
     position: absolute;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     top: 0;
+    bottom: 0;
     left: 0;
-    z-index: 6;
+    z-index: 16;
     opacity: 1;
     pointer-events: auto;
     width: 100%;
-    height: auto;
+    max-height: 100vh;
+
     background-color: $background-main;
     padding: 48px 40px;
 
@@ -42,7 +46,6 @@
 }
 
 .list-menu {
-  margin-bottom: 300px;
   font-size: 40px;
   color: $primary-title;
   &__item {
@@ -104,7 +107,18 @@
   color: $accent-color;
 
   &__item:not(:last-child) {
+    position: relative;
     margin-right: 20px;
+  }
+  &__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 10px);
+    width: 1px;
+    height: 22px;
+    background-color: rgba(33, 33, 33, 0.2);
   }
 }
 
