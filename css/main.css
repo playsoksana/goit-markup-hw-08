@@ -1863,12 +1863,13 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 }
 
 .butons-list__item {
   margin-left: 8px;
+  margin-bottom: 15px;
 }
 
 .butons-list__btn {
@@ -1883,7 +1884,6 @@ img {
   padding: 6px 22px;
   border-radius: 4px;
   border-radius: 4px;
-  margin-bottom: 15px;
   cursor: pointer;
   -webkit-transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, -webkit-box-shadow;
