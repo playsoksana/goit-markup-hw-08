@@ -915,7 +915,7 @@ img {
 .specialization-type__photo {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .specialization-type__title {
@@ -996,6 +996,9 @@ img {
 
 .team-card__photo {
   margin-bottom: 30px;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .team-card__name {
