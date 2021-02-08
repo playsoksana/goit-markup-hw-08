@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <meta name="description" content="Сайт по веб-разработке" />
-    
-    <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preload" href="./js/modal.js" as="script" />
     <link rel="preload" href="./js/menu.js" as="script" />
     <link rel="preload" href="./css/main.min.css" as="style" />
+    
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    
   </head>
   <body>
     <!--Header-->
@@ -572,13 +573,7 @@
         <div class="footer-widget">
           <b class="footer-title"> Подпишитесь на рассылку </b>
           <form class="mailing-form">
-            <input
-              class="mailing-form__input"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              autocomplete="on"
-            />
+            <label><input class="mailing-form__input" type="email" name="email" placeholder="E-mail" autocomplete="on" /></label>
             <button
               aria-label="Кнопка подписаться"
               class="mailing-btn"
