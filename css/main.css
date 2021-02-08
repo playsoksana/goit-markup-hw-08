@@ -1069,6 +1069,10 @@ img {
   color: #ffffff;
 }
 
+.position__social {
+  color: #ffffff;
+}
+
 .clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
