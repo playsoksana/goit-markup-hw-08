@@ -2,19 +2,21 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: -8px;
-  margin-bottom: 25px;
+
   @media screen and (min-width: $tablet) {
     justify-content: center;
-    margin-bottom: 15px;
   }
   @media screen and (min-width: $laptop) {
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   &__item {
     margin-left: 8px;
     margin-bottom: 15px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+    }
   }
   &__btn {
     display: block;

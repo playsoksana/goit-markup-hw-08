@@ -1846,7 +1846,6 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: -8px;
-  margin-bottom: 25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1854,7 +1853,6 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 15px;
   }
 }
 
@@ -1863,13 +1861,19 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
 .butons-list__item {
   margin-left: 8px;
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .butons-list__item {
+    margin-bottom: 0;
+  }
 }
 
 .butons-list__btn {
@@ -1906,7 +1910,7 @@ img {
   font-size: 16px;
   line-height: 1.9;
   position: relative;
-  margin: -30px 0 0 -30px;
+  margin: -5px 0 0 -30;
   background-color: #ffffff;
   border: 0;
 }
@@ -1918,6 +1922,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-top: 0;
   }
 }
 
