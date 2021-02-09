@@ -59,7 +59,8 @@
               <span>+38 096 111 11 11</span></a
             >
           </address>
-        </div>        
+        </div> 
+        
     </header>
     <!--Main-->
     <main>
@@ -156,6 +157,7 @@
                     "
                     src="./images/specialization-photo/img1.jpg"
                     alt="человек печатает на ноутбуке"
+                    
                   />
                 </picture>
                 <h3 class="specialization-type__title">
@@ -249,7 +251,8 @@
                 <img
                   class="team-card__photo"
                   src="./images/foto-product-designer/product-designer-tablet.jpg"
-                  alt="специалист по дизайну продукта"
+                  alt="Cпециалист по дизайну продукта"
+                  width="354px"
                 />
               </picture>
               <h3 class="team-card__name">Игорь Демьяненко</h3>
@@ -323,6 +326,7 @@
                   class="team-card__photo"
                   src="./images/foto-frontend-developer/frontend-developer-tablet.jpg"
                   alt="Фронтенд-разработчик"
+                  width="354px"
                 />
               </picture>
 
@@ -407,6 +411,7 @@
                   class="team-card__photo"
                   src="./images/foto-marketing/marketing-tablet.jpg"
                   alt="Маркетолог"
+                  width="354px"
                 />
               </picture>
               <h3 class="team-card__name">Николай Тарасов</h3>
@@ -490,6 +495,7 @@
                   class="team-card__photo"
                   src="./images/foto-ui-designer/ui-designer-tablet.jpg"
                   alt="Специалист по дизайну интерфейса"
+                  width="354px"
                 />
               </picture>
               <h3 class="team-card__name">Михаил Ермаков</h3>
@@ -642,13 +648,7 @@
         <div class="footer-widget">
           <b class="footer-title"> Подпишитесь на рассылку </b>
           <form class="mailing-form">
-            <input
-              class="mailing-form__input"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              autocomplete="on"
-            />
+            <label><input class="mailing-form__input" type="email" name="email" placeholder="E-mail" autocomplete="on" /></label>
             <button
               aria-label="Кнопка подписаться"
               class="mailing-btn"
@@ -761,15 +761,9 @@
         </form>
       </div>
     </div>
-    <button type="button" aria-label="Выпадающее меню" aria-control="nav-cont" class="btn-menu" aria-expanded="false"
-      data-menu-button>
-      <svg class="btn-menu__icon" width="40" height="40" aria-label="Переключатель меню">
-        <use class="btn-menu__cross" href="./images/icon.svg#icon-cross"></use>
-        <use class="btn-menu__burger" href="./images/icon.svg#icon-menu"></use>
-      </svg>
-    </button>
+    
     </div>
-    <div class="header-menu" id="nav-cont" data-menu>
+    <div class="header-menu" id="nav-cont" data-menu>      
       <nav class="navigation-menu">
         <ul class="list-menu">
           <li class="list-menu__item">
@@ -804,6 +798,13 @@
         </ul>
       </address>
     </div>
+    <button type="button" aria-label="Выпадающее меню" aria-control="nav-cont" class="btn-menu" aria-expanded="false"
+      data-menu-button>
+      <svg class="btn-menu__icon" width="40" height="40" aria-label="Переключатель меню">
+        <use class="btn-menu__cross" href="./images/icon.svg#icon-cross"></use>
+        <use class="btn-menu__burger" href="./images/icon.svg#icon-menu"></use>
+      </svg>
+    </button>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>

@@ -15,6 +15,7 @@
       format("truetype"),
     /* Safari, Android, iOS */
       url("../fonts/roboto-v20-latin_cyrillic-500.svg#Roboto") format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 /* roboto-regular - latin_cyrillic */
 @font-face {
@@ -33,6 +34,7 @@
       format("truetype"),
     /* Safari, Android, iOS */
       url("../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto") format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 /* roboto-700 - latin_cyrillic */
 @font-face {
@@ -51,6 +53,7 @@
       format("truetype"),
     /* Safari, Android, iOS */
       url("../fonts/roboto-v20-latin_cyrillic-700.svg#Roboto") format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 /* roboto-900 - latin_cyrillic */
 @font-face {
@@ -69,6 +72,7 @@
       format("truetype"),
     /* Safari, Android, iOS */
       url("../fonts/roboto-v20-latin_cyrillic-900.svg#Roboto") format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 /* raleway-regular - latin */
 @font-face {
@@ -87,6 +91,7 @@
       format("truetype"),
     /* Safari, Android, iOS */
       url("../fonts/raleway-v18-latin-regular.svg#Raleway") format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 /* raleway-700 - latin */
 @font-face {
@@ -103,4 +108,5 @@
       format("truetype"),
     /* Safari, Android, iOS */ url("../fonts/raleway-v18-latin-700.svg#Raleway")
       format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
